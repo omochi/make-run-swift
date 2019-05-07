@@ -1,0 +1,18 @@
+#!/bin/bash
+set -ue
+cat << EOT > run.swift
+#!/usr/bin/swift sh
+import Scripting // @omochi
+
+func main() throws {
+    let command = "swift"
+    let args = [
+        "a.swift"
+    ]
+    try system(command: command,
+               args: args)
+}
+
+try! main()
+EOT
+chmod +x run.swift
