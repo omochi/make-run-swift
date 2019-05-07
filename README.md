@@ -11,3 +11,7 @@ $ ./run.swift
 Generated script requires `swift-sh`.
 
 https://github.com/mxcl/swift-sh
+
+# Install
+
+Copy `make-run-swift` to your `bin` dir.
